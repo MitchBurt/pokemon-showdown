@@ -104,10 +104,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Berry Juice",
 		desc: "Restores 20 HP when at 1/2 max HP or less. Single use.",
 	},
-	berrysweet: {
-		name: "Berry Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
-	},
 	bigroot: {
 		name: "Big Root",
 		desc: "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
@@ -259,10 +255,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	clawfossil: {
 		name: "Claw Fossil",
 		desc: "Can be revived into Anorith.",
-	},
-	cloversweet: {
-		name: "Clover Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
 	},
 	cobaberry: {
 		name: "Coba Berry",
@@ -429,8 +421,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	ejectpack: {
 		name: "Eject Pack",
 		desc: "If the holder's stat stages are lowered, it switches to a chosen ally. Single use.",
-
-		end: "  [POKEMON] is switched out by the Eject Pack!",
 	},
 	electirizer: {
 		name: "Electirizer",
@@ -553,10 +543,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	floatstone: {
 		name: "Float Stone",
 		desc: "Holder's weight is halved.",
-	},
-	flowersweet: {
-		name: "Flower Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
 	},
 	flyinggem: {
 		name: "Flying Gem",
@@ -948,10 +934,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	loveball: {
 		name: "Love Ball",
 		desc: "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
-	},
-	lovesweet: {
-		name: "Love Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
 	},
 	lucarionite: {
 		name: "Lucarionite",
@@ -1418,10 +1400,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Repeat Ball",
 		desc: "A Poke Ball that works well on Pokemon species that were previously caught.",
 	},
-	ribbonsweet: {
-		name: "Ribbon Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
-	},
 	rindoberry: {
 		name: "Rindo Berry",
 		desc: "Halves damage taken from a supereffective Grass-type attack. Single use.",
@@ -1656,10 +1634,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Starf Berry",
 		desc: "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
 	},
-	starsweet: {
-		name: "Star Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
-	},
 	steelixite: {
 		name: "Steelixite",
 		desc: "If held by a Steelix, this item allows it to Mega Evolve in battle.",
@@ -1694,10 +1668,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 		name: "Stone Plate",
 		desc: "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
 	},
-	strawberrysweet: {
-		name: "Strawberry Sweet",
-		desc: "Evolves Milcery into Alcremie when held and spun around.",
-	},
 	sunstone: {
 		name: "Sun Stone",
 		desc: "Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.",
@@ -1709,7 +1679,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	sweetapple: {
 		name: "Sweet Apple",
-		desc: "Evolves Applin into Appletun when used.",
+		desc: "Evolves Applin into Applesauce when used.",
 	},
 	tamatoberry: {
 		name: "Tamato Berry",
@@ -1725,7 +1695,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	tartapple: {
 		name: "Tart Apple",
-		desc: "Evolves Applin into Flapple when used.",
+		desc: "Evolves Applin into Flipple when used.",
 	},
 	terrainextender: {
 		name: "Terrain Extender",

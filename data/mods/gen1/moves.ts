@@ -38,7 +38,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		condition: {
 			duration: 2,
 			durationCallback(target, source, effect) {
-				return this.random(3, 5);
+				return this.random(3, 4);
 			},
 			onStart(pokemon) {
 				this.effectState.totalDamage = 0;
@@ -425,13 +425,17 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	highjumpkick: {
 		inherit: true,
 		onMoveFail(target, source, move) {
-			this.directDamage(1, source, target);
+			if (!target.types.includes('Ghost')) {
+				this.directDamage(1, source, target);
+			}
 		},
 	},
 	jumpkick: {
 		inherit: true,
 		onMoveFail(target, source, move) {
-			this.directDamage(1, source, target);
+			if (!target.types.includes('Ghost')) {
+				this.directDamage(1, source, target);
+			}
 		},
 	},
 	karatechop: {
@@ -496,6 +500,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	metronome: {
 		inherit: true,
 		noMetronome: ["Metronome", "Struggle"],
+		secondary: null,
+		target: "self",
+		type: "Normal",
 	},
 	mimic: {
 		inherit: true,
@@ -538,12 +545,15 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			onBoost(boost, target, source, effect) {
 				if (effect.effectType === 'Move' && effect.category !== 'Status') return;
 				if (source && target !== source) {
+					let showMsg = false;
 					let i: BoostID;
 					for (i in boost) {
 						if (boost[i]! < 0) {
 							delete boost[i];
+							showMsg = true;
 						}
 					}
+					if (showMsg) this.add('-activate', target, 'move: Mist');
 				}
 			},
 		},

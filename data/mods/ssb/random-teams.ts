@@ -272,33 +272,6 @@ export const ssbSets: SSBSets = {
 		signatureMove: 'Rigged Dice',
 		evs: {hp: 252, def: 4, spd: 252}, nature: 'Calm',
 	},
-	Finland: {
-		species: 'Alcremie', ability: 'Winding Song', item: 'Leftovers', gender: 'M',
-		moves: ['Shore Up', 'Moonblast', ['Infestation', 'Whirlwind']],
-		signatureMove: 'Cradily Chaos',
-		evs: {hp: 252, def: 64, spa: 64, spd: 64, spe: 64}, ivs: {atk: 0}, nature: 'Serious',
-	},
-	'Finland-Tsikhe': {
-		species: 'Alcremie-Lemon-Cream', ability: 'Winding Song', item: 'Leftovers', gender: 'M',
-		moves: ['Shore Up', 'Spiky Shield', ['Reflect', 'Light Screen']],
-		signatureMove: 'Cradily Chaos',
-		evs: {hp: 252, def: 64, spa: 64, spd: 64, spe: 64}, ivs: {atk: 0}, nature: 'Serious',
-		skip: 'Finland',
-	},
-	'Finland-Nezavisa': {
-		species: 'Alcremie-Ruby-Swirl', ability: 'Winding Song', item: 'Leftovers', gender: 'M',
-		moves: ['Lava Plume', 'Scorching Sands', ['Refresh', 'Destiny Bond']],
-		signatureMove: 'Cradily Chaos',
-		evs: {hp: 252, def: 64, spa: 64, spd: 64, spe: 64}, ivs: {atk: 0}, nature: 'Serious',
-		skip: 'Finland',
-	},
-	'Finland-Järvilaulu': {
-		species: 'Alcremie-Mint-Cream', ability: 'Winding Song', item: 'Leftovers', gender: 'M',
-		moves: ['Sticky Web', 'Parting Shot', ['Light of Ruin', 'Sparkling Aria']],
-		signatureMove: 'Cradily Chaos',
-		evs: {hp: 252, def: 64, spa: 64, spd: 64, spe: 64}, ivs: {atk: 0}, nature: 'Serious',
-		skip: 'Finland',
-	},
 	'frostyicelad ❆': {
 		species: 'Lapras-Gmax', ability: 'Ice Shield', item: 'Life Orb', gender: 'M',
 		moves: ['Quiver Dance', 'Sparkling Aria', 'Recover'],
@@ -310,12 +283,6 @@ export const ssbSets: SSBSets = {
 		moves: ['Bug Buzz', 'Nasty Plot', 'Snipe Shot'],
 		signatureMove: 'King Giri Giri Slash',
 		evs: {hp: 252, def: 4, spe: 252}, nature: 'Timid',
-	},
-	Gimmick: {
-		species: 'Grimmsnarl', ability: 'IC3PEAK', item: 'Throat Spray', gender: 'M',
-		moves: ['Boomburst', 'Disarming Voice', 'Snarl'],
-		signatureMove: 'Random Screaming',
-		evs: {hp: 4, spa: 252, spe: 252}, ivs: {atk: 0}, nature: 'Timid', shiny: true,
 	},
 	GMars: {
 		species: 'Minior-Meteor', ability: 'Capsule Armor', item: 'White Herb', gender: 'N',
@@ -371,19 +338,6 @@ export const ssbSets: SSBSets = {
 		signatureMove: 'The Hunt is On!',
 		evs: {hp: 4, atk: 252, spe: 252}, nature: 'Jolly',
 	},
-	Jho: {
-		species: 'Toxtricity', ability: 'Punk Rock', item: 'Throat Spray', gender: 'M',
-		moves: ['Nasty Plot', 'Overdrive', 'Volt Switch'],
-		signatureMove: 'Genre Change',
-		evs: {spa: 252, spd: 4, spe: 252}, ivs: {atk: 0}, nature: 'Timid',
-	},
-	'Jho-Low-Key': {
-		species: 'Toxtricity-Low-Key', ability: 'Venomize', item: 'Throat Spray', gender: 'M',
-		moves: ['Aura Sphere', 'Boomburst', 'Volt Switch'],
-		signatureMove: 'Genre Change',
-		evs: {spa: 252, spd: 4, spe: 252}, ivs: {atk: 0}, nature: 'Timid',
-		skip: 'Jho',
-	},
 	Jordy: {
 		species: 'Archeops', ability: 'Divine Sandstorm', item: 'Life Orb', gender: 'M',
 		moves: ['Brave Bird', 'Head Smash', ['U-turn', 'Roost', 'Icicle Crash']],
@@ -401,12 +355,6 @@ export const ssbSets: SSBSets = {
 		moves: ['Tailwind', 'Encore', 'Healing Wish'],
 		signatureMove: 'Blackbird',
 		evs: {spa: 252, spd: 4, spe: 252}, ivs: {atk: 0}, nature: 'Timid',
-	},
-	Kennedy: {
-		species: 'Cinderace', ability: 'False Nine', item: 'Choice Band', gender: 'M',
-		moves: ['High Jump Kick', 'Triple Axel', 'U-turn'],
-		signatureMove: 'Top Bins',
-		evs: {atk: 252, def: 4, spe: 252}, nature: 'Adamant',
 	},
 	Kev: {
 		species: 'Kingdra', ability: 'King of Atlantis', item: 'Life Orb', gender: 'M',
@@ -861,14 +809,6 @@ export const ssbSets: SSBSets = {
 	},
 };
 
-const afdSSBSets: SSBSets = {
-	'Fox': {
-		species: 'Delphox', ability: 'No Ability', item: '', gender: '',
-		moves: [],
-		signatureMove: 'Super Metronome',
-	},
-};
-
 export class RandomStaffBrosTeams extends RandomTeams {
 	randomStaffBrosTeam(options: {inBattle?: boolean} = {}) {
 		this.enforceNoDirectCustomBanlistChanges();
@@ -876,10 +816,8 @@ export class RandomStaffBrosTeams extends RandomTeams {
 		const team: PokemonSet[] = [];
 		const debug: string[] = []; // Set this to a list of SSB sets to override the normal pool for debugging.
 		const ruleTable = this.dex.formats.getRuleTable(this.format);
-		const wiiulegacy = !ruleTable.has('dynamaxclause');
 		const monotype = ruleTable.has('sametypeclause') ? this.sample([...this.dex.types.names()]) : false;
-
-		let pool = debug.length ? debug : wiiulegacy ? Object.keys(afdSSBSets) : Object.keys(ssbSets);
+		let pool = debug.length ? debug : Object.keys(ssbSets);
 		if (monotype && !debug.length) {
 			pool = pool.filter(x => this.dex.species.get(ssbSets[x].species).types.includes(monotype));
 		}
@@ -888,12 +826,12 @@ export class RandomStaffBrosTeams extends RandomTeams {
 		while (pool.length && team.length < this.maxTeamSize) {
 			if (depth >= 200) throw new Error(`Infinite loop in Super Staff Bros team generation.`);
 			depth++;
-			const name = wiiulegacy ? this.sample(pool) : this.sampleNoReplace(pool);
-			const ssbSet: SSBSet = wiiulegacy ? this.dex.deepClone(afdSSBSets[name]) : this.dex.deepClone(ssbSets[name]);
+			const name = this.sampleNoReplace(pool);
+			const ssbSet: SSBSet = this.dex.deepClone(ssbSets[name]);
 			if (ssbSet.skip) continue;
 
 			// Enforce typing limits
-			if (!(debug.length || monotype || wiiulegacy)) { // Type limits are ignored for debugging, monotype, or memes.
+			if (!(debug.length || monotype)) { // Type limits are ignored when debugging or for monotype variations.
 				const species = this.dex.species.get(ssbSet.species);
 				if (this.forceMonotype && !species.types.includes(this.forceMonotype)) continue;
 
@@ -949,20 +887,6 @@ export class RandomStaffBrosTeams extends RandomTeams {
 
 			// Any set specific tweaks occur here.
 			if (set.name === 'Marshmallon' && !set.moves.includes('Head Charge')) set.moves[this.random(3)] = 'Head Charge';
-
-			if (wiiulegacy) {
-				const egg = this.random(100);
-				if (egg === 69) {
-					set.name = 'Falco';
-					set.species = 'Swellow';
-				} else if (egg === 96) {
-					set.name = 'Captain Falcon';
-					set.species = 'Talonflame';
-				}
-				if (this.randomChance(1, 100)) {
-					set.item = 'Mail';
-				}
-			}
 
 			team.push(set);
 

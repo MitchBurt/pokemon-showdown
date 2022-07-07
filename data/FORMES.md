@@ -117,7 +117,6 @@ List of all in-battle forme changes:
 - Mimikyu (Disguise)
 - Cherrim (Flower Gift)
 - Castform (Forecast)
-- Cramorant (Gulp Missile)
 - Morpeko (Hunger Switch)
 - Eiscue (Ice Face)
 - Zygarde (Power Construct)
@@ -144,7 +143,6 @@ Visual in-battle formes
 Some Pokémon change their appearance mid-battle, but not in a way that changes their base stats, Ability, or type. These include:
 
 - Cherrim
-- Cramorant
 - Mimikyu
 
 PS treats these like regular in-battle formes.
@@ -184,7 +182,7 @@ PS's current implementation of this is weird and will be changed in a few days; 
 Not formes
 ----------
 
-Alcremie garnishes and Spinda spot patterns aren't considered formes by the games themselves. PS doesn't support them at all.
+Spinda spot patterns aren't considered formes by the games themselves. PS doesn't support them at all.
 
 Dynamax and Gigantamax are not considered formes by the games themselves. PS implements them correctly in the simulator as volatile statuses, but does have dex entries for Gigantamax Pokémon (treating them as in-battle formes) to make their sprites easier to access, and to make Gigantamax-capable Pokémon easier to select in the teambuilder.
 

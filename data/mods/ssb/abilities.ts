@@ -681,54 +681,6 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		gen: 8,
 	},
 
-	// Finland
-	windingsong: {
-		desc: "If this Pokemon's species is Alcremie, it alternates one of its moves between two different options at the end of each turn, depending on the forme of Alcremie.",
-		shortDesc: "Alcremie: alternates between moves each turn.",
-		name: "Winding Song",
-		isPermanent: true,
-		onResidual(pokemon) {
-			if (pokemon.species.baseSpecies !== 'Alcremie') return;
-			let coolMoves = [];
-			if (pokemon.species.forme === 'Lemon-Cream') {
-				coolMoves = ['Reflect', 'Light Screen'];
-			} else if (pokemon.species.forme === 'Ruby-Swirl') {
-				coolMoves = ['Refresh', 'Destiny Bond'];
-			} else if (pokemon.species.forme === 'Mint-Cream') {
-				coolMoves = ['Light of Ruin', 'Sparkling Aria'];
-			} else {
-				coolMoves = ['Infestation', 'Whirlwind'];
-			}
-			let oldMove;
-			let move;
-			if (pokemon.moves.includes(this.toID(coolMoves[0]))) {
-				oldMove = this.toID(coolMoves[0]);
-				move = this.dex.moves.get(coolMoves[1]);
-			} else if (pokemon.moves.includes(this.toID(coolMoves[1]))) {
-				oldMove = this.toID(coolMoves[1]);
-				move = this.dex.moves.get(coolMoves[0]);
-			} else {
-				return;
-			}
-			if (!oldMove || !move) return;
-			const sketchIndex = pokemon.moves.indexOf(oldMove);
-			if (sketchIndex < 0) return false;
-			const sketchedMove = {
-				move: move.name,
-				id: move.id,
-				pp: (move.pp * 8 / 5),
-				maxpp: (move.pp * 8 / 5),
-				target: move.target,
-				disabled: false,
-				used: false,
-			};
-			pokemon.moveSlots[sketchIndex] = sketchedMove;
-			pokemon.baseMoveSlots[sketchIndex] = sketchedMove;
-			this.add('-message', `Finland changed its move ${this.dex.moves.get(oldMove).name} to ${move.name}!`);
-		},
-		gen: 8,
-	},
-
 	// frostyicelad
 	iceshield: {
 		desc: "This Pokemon can only be damaged by direct attacks. This Pokemon cannot lose its held item due to another Pokemon's attack.",
@@ -1713,10 +1665,10 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		onTryMove(pokemon, target, move) {
 			const moveData = pokemon.getMoveData(move.id);
-			if (!moveData || moveData.pp < 0.5) return;
+			if (!moveData) return;
 			// Lost 1 PP due to move usage, restore 0.5 PP to make it so that only 0.5 PP
 			// would be used.
-			moveData.pp += 0.5;
+			moveData.pp = (Math.round(moveData.pp * 100) + 50) / 100;
 		},
 		gen: 8,
 	},

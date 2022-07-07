@@ -122,15 +122,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		abilities: {0: "Dragon's Fury"},
 	},
-	// Jho
-	toxtricity: {
-		inherit: true,
-		abilities: {0: "Punk Rock"},
-	},
-	toxtricitylowkey: {
-		inherit: true,
-		abilities: {0: "Venomize"},
-	},
 	// Kaiju Bunny
 	lopunnymega: {
 		inherit: true,

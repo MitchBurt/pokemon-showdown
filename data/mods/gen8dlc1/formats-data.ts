@@ -527,13 +527,6 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		isNonstandard: "Unobtainable",
 		tier: "Unreleased",
 	},
-	melmetal: {
-		gmaxUnreleased: true,
-	},
-	melmetalgmax: {
-		isNonstandard: "Unobtainable",
-		tier: "Unreleased",
-	},
 	zarudedada: {
 		isNonstandard: "Unobtainable",
 		tier: "Unreleased",

@@ -2284,7 +2284,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DUber",
 	},
 	rayquaza: {
-		randomBattleMoves: ["dracometeor", "dragonascent", "dragondance", "earthquake", "extremespeed", "outrage", "vcreate"],
+		randomBattleMoves: ["dracometeor", "dragondance", "earthquake", "extremespeed", "outrage", "vcreate"],
 		randomDoubleBattleMoves: ["dracometeor", "dragonclaw", "dragondance", "earthquake", "extremespeed", "protect", "tailwind", "vcreate"],
 		tier: "Uber",
 		doublesTier: "DUber",
@@ -3046,7 +3046,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	sawk: {
-		randomBattleMoves: ["bulkup", "closecombat", "earthquake", "icepunch", "knockoff", "poisonjab", "stoneedge"],
+		randomBattleMoves: ["bulkup", "closecombat", "earthquake", "icepunch", "knockoff", "poisonjab"],
 		randomDoubleBattleMoves: ["closecombat", "icepunch", "knockoff", "protect", "rockslide"],
 		tier: "PUBL",
 		doublesTier: "(DUU)",
@@ -3362,7 +3362,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	chandelure: {
-		randomBattleMoves: ["calmmind", "energyball", "fireblast", "hiddenpowerground", "shadowball", "substitute", "trick"],
+		randomBattleMoves: ["calmmind", "energyball", "fireblast", "hiddenpowerground", "painsplit", "shadowball", "substitute", "trick"],
 		randomDoubleBattleMoves: ["energyball", "heatwave", "overheat", "protect", "shadowball", "trick"],
 		tier: "UU",
 		doublesTier: "DUU",
@@ -3485,7 +3485,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	hydreigon: {
-		randomBattleMoves: ["darkpulse", "dracometeor", "earthpower", "fireblast", "flashcannon", "roost", "superpower", "uturn"],
+		randomBattleMoves: ["darkpulse", "dracometeor", "dragonpulse", "earthpower", "fireblast", "flashcannon", "roost", "superpower", "uturn"],
 		randomDoubleBattleMoves: ["darkpulse", "dracometeor", "fireblast", "flashcannon", "protect", "tailwind", "uturn"],
 		tier: "UU",
 		doublesTier: "DUU",
@@ -3904,7 +3904,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	goodra: {
-		randomBattleMoves: ["dracometeor", "dragontail", "earthquake", "fireblast", "sludgebomb", "thunderbolt"],
+		randomBattleMoves: ["dracometeor", "dragonpulse", "dragontail", "earthquake", "fireblast", "sludgebomb", "thunderbolt"],
 		randomDoubleBattleMoves: ["dracometeor", "dragonpulse", "fireblast", "muddywater", "powerwhip", "protect", "thunderbolt"],
 		tier: "RU",
 		doublesTier: "(DUU)",
@@ -4655,12 +4655,297 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		doublesTier: "DOU",
 	},
-	meltan: {
-		isNonstandard: "LGPE",
-		tier: "Illegal",
+	oogabooga: {
+		randomBattleMoves: ["earthquake", "closecombat", "boneclub", "bonerush", "thrash"],
+		randomBattleLevel: 76,
+		tier: "OU",
 	},
-	melmetal: {
-		isNonstandard: "LGPE",
-		tier: "Illegal",
+	awmane: {
+		randomBattleMoves: ["selfdestruct", "bulkup", "explosion", "thunder"],
+		randomBattleLevel: 80,
+		tier: "OU",
+	},
+	ebolable: {
+		randomBattleMoves: ["toxic", "darkpulse", "sludgebomb", "switcheroo", "nastyplot", "nughtdaze", "venoshock"],
+		randomBattleLevel: 76,
+		tier: "OU",
+	},
+	ganjaze: {
+		randomBattleMoves: ["toxic", "shadowball", "sludgebomb", "waterpulse", "nastyplot", "hiddenpower", "venoshock"],
+		randomBattleLevel: 80,
+		tier: "UU",
+	},
+	gothot: {
+		randomBattleMoves: ["moonblast", "darkpulse", "knockoff", "moonlight", "attract"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	capfalco: {
+		randomBattleMoves: ["bravebird", "flareblitz", "firepunch", "blazekick", "flyingpress", "machpunch"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	chuxkush: {
+		randomBattleMoves: ["sacredsword", "thunderpunch", "bulkup", "ironhead", "drainpunch", "thunderbolt"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	ciphron: {
+		randomBattleMoves: ["psychic", "earthpower", "darkpulse", "powergem", "shadowball", "calmmind"],
+		randomBattleLevel: 74,
+		tier: "Uber",
+	},
+	jewis: {
+		randomBattleMoves: ["earthpower", "flashcannon", "stealthrock", "thunderwave", "toxic", "voltswitch"],
+		tier: "(PU)",
+	},
+	alien: {
+		randomBattleMoves: ["psychic", "cosmicpower", "encore", "trick", "flashcannon", "moonblast"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	amazulk: {
+		randomBattleMoves: ["closecombat", "bulkup", "agility", "drainpunch", "machpunch", "doubleedge"],
+		randomBattleLevel: 78,
+		tier: "UU",
+	},
+	amonsus: {
+		randomBattleMoves: ["blazekick", "dig", "slash", "hypervoice", "trick", "heatcrash"],
+		randomBattleLevel: 78,
+		tier: "UU",
+	},
+	anoobis: {
+		randomBattleMoves: ["earthpower", "shadowball", "gigadrain", "hypnosis", "dreameater"],
+		randomBattleLevel: 84,
+		tier: "(PU)",
+	},
+	bicyelion: {
+		randomBattleMoves: ["pyschic", "gearshift", "flashcannon", "heavyslam", "hiddenpower"],
+		randomBattleLevel: 80,
+		tier: "UU",
+	},
+	bipharma: {
+		randomBattleMoves: ["poisonjab", "ironhead", "electroweb", "toxic", "magnetrise"],
+		randomBattleLevel: 80,
+		tier: "UU",
+	},
+	burik: {
+		randomBattleMoves: ["surf", "explosion", "flashcannon", "irondefense", "metalburst"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	corork: {
+		randomBattleMoves: ["psychic", "moonblast", "calmmind", "thunderwave", "substitute"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	cosmie: {
+		randomBattleMoves: ["psychic", "moonblast", "encore", "taunt", "substitute"],
+		randomBattleLevel: 84,
+		tier: "UU",
+	},
+	dabboi: {
+		randomBattleMoves: ["icepunch", "waterfall", "aquajet", "zenheadbutt", "substitute"],
+		randomBattleLevel: 84,
+		tier: "UU",
+	},
+	deathcubed: {
+		randomBattleMoves: ["thunderbolt", "triattack", "flashcannon", "thunderwave", "explosion"],
+		randomBattleLevel: 82,
+		tier: "UU",
+	},
+	duggame: {
+		randomBattleMoves: ["hydropump", "aircutter", "rockblast", "flashcannon", "iciclespear", "icebeam"],
+		randomBattleLevel: 86,
+		tier: "(PU)",
+	},
+	dushroom: {
+		randomBattleMoves: ["gigadrain", "spore", "toxic", "substitute", "sludgebomb", "hiddenpower"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	fazeagle: {
+		randomBattleMoves: ["bravebird", "defog", "flareblitz", "roost", "swordsdance", "uturn"],
+		randomBattleLevel: 81,
+		tier: "NU",
+	},
+	firome: {
+		randomBattleMoves: ["ironhead", "flamethrower", "lavaplume", "agility", "irondefense", "taunt", "toxic"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	freddifer: {
+		randomBattleMoves: ["energyball", "fireblast", "gunkshot", "hydropump", "icebeam", "protect"],
+		randomBattleLevel: 86,
+		tier: "(PU)",
+	},
+	fridege: {
+		randomBattleMoves: ["hyperbeam", "hypervoice", "freezedry", "flashcannon", "protect", "substitute"],
+		randomBattleLevel: 81,
+		tier: "NU",
+	},
+	frosteer: {
+		randomBattleMoves: ["airslash", "calmmind", "icebeam", "rest", "freezefry", "sleeptalk"],
+		randomBattleLevel: 80,
+		tier: "RU",
+	},
+	gaiser: {
+		randomBattleMoves: ["curse", "firepunch", "gunkshot", "icepunch", "memento", "poisonjab", "shadowsneak"],
+		tier: "(PU)",
+	},
+	gluerilla: {
+		randomBattleMoves: ["leafstorm", "firepunch", "leafblade", "stoneedge", "closecombat", "flamethrower"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	god: {
+		randomBattleMoves: ["earthquake", "extremespeed", "recover", "psychic", "calmmind"],
+		randomBattleLevel: 78,
+		tier: "Uber",
+	},
+	gawdhamster: {
+		randomBattleMoves: ["doubleedge", "knockoff", "return", "suckerpunch", "swordsdance"],
+		randomBattleLevel: 86,
+		tier: "NU",
+	},
+	goncariciv: {
+		randomBattleMoves: ["crunch", "earthquake", "healbell", "playrough", "thunderwave"],
+		randomBattleLevel: 80,
+		tier: "(PU)",
+	},
+	gorefield: {
+		randomBattleMoves: ["calmmind", "dracometeor", "rest", "roar", "shadowball", "sleeptalk", "willowisp"],
+		randomBattleLevel: 78,
+		tier: "Uber",
+	},
+	grox: {
+		randomBattleMoves: ["doulbeedge", "knockoff", "return", "ironhead", "swordsdance"],
+		randomBattleLevel: 86,
+		tier: "NU",
+	},
+	hazmate: {
+		randomBattleMoves: ["drainpunch", "gunkshot", "icepunch", "knockoff", "substitute", "suckerpunch", "swordsdance"],
+		randomBattleLevel: 84,
+		tier: "NU",
+	},
+	heattar: {
+		randomBattleMoves: ["extremespeed", "flareblitz", "sacredfire", "stompingtantrum", "stoneedge"],
+		randomBattleLevel: 78,
+		tier: "NUBL",
+	},
+	impostown: {
+		randomBattleMoves: ["nightslash", "firepunch", "bulkup", "poisonjab", "trick"],
+		randomBattleLevel: 80,
+		tier: "NU",
+	},
+	jank: {
+		randomBattleMoves: ["crunch", "earthquake", "icefang", "aquajet", "waterfall"],
+		randomBattleLevel: 84,
+		tier: "RUBL",
+	},
+	korbie: {
+		randomBattleMoves: ["calmmind", "fireblast", "moonblast", "softboiled", "stealthrock", "thunderwave"],
+		randomBattleLevel: 86,
+		tier: "NU",
+	},
+	krafpunk: {
+		randomBattleMoves: ["crosschop", "psychocut", "thunderbunch", "icepunch", "voltswitch", "wildcharge"],
+		randomBattleLevel: 82,
+		tier: "(PU)",
+	},
+	legend: {
+		randomBattleMoves: ["spacialrend", "fusionbolt", "fusionflare", "dragonclaw", "crushgrip"],
+		randomBattleLevel: 78,
+		tier: "OU",
+	},
+	longifer: {
+		randomBattleMoves: ["bodyslam", "coil", "earthquake", "roost", "skyattack"],
+		randomBattleLevel: 80,
+		tier: "(PU)",
+	},
+	lossilith: {
+		randomBattleMoves: ["earthquake", "explosion", "stealthrock", "stoneedge", "superpower"],
+		randomBattleLevel: 82,
+		tier: "PU",
+	},
+	lovlilad: {
+		randomBattleMoves: ["energyball", "icebeam", "psychic", "surf", "tailglow"],
+		randomBattleLevel: 82,
+		tier: "OU",
+	},
+	luis: {
+		randomBattleMoves: ["closecombat", "fireblast", "flareblitz", "focusblast", "grassknot", "nastyplot", "stoneedge", "uturn", "vacuumwave"],
+		randomBattleLevel: 82,
+		tier: "UU",
+	},
+	marleyzard: {
+		randomBattleMoves: ["energyball", "flamethrower", "dragonpulse", "airslash", "calmmind"],
+		randomBattleLevel: 80,
+		tier: "OU",
+	},
+	megatron: {
+		randomBattleMoves: ["agility", "bulletpunch", "earthquake", "explosion", "meteormash", "stealthrock", "thunderpunch"],
+		randomBattleLevel: 79,
+		tier: "RU",
+	},
+	mongelord: {
+		randomBattleMoves: ["flamethrower", "icebeam", "ironhead", "shiftgear", "technoblast", "thunderbolt", "uturn"],
+		randomBattleLevel: 80,
+		tier: "OU",
+	},
+	myresft: {
+		randomBattleMoves: ["bugbuzz", "gigadrain", "hiddenpowerice", "stickyweb", "thunder", "voltswitch"],
+		randomBattleLevel: 86,
+		tier: "NU",
+	},
+	nightwave: {
+		randomBattleMoves: ["moonblast", "shadowball", "shadowsneak", "calmind", "taunt"],
+		randomBattleLevel: 86,
+		tier: "UU",
+	},
+	nononmon: {
+		randomBattleMoves: ["calmmind", "flashcannon", "fleurcannon", "focusblast", "ironhead", "shiftgear", "thunderbolt"],
+		randomBattleLevel: 80,
+		tier: "OU",
+	},
+	opticulu: {
+		randomBattleMoves: ["knockoff", "outrage", "overheat", "airslash", "swordsdance", "roost", "uturn"],
+		randomBattleLevel: 80,
+		tier: "UU",
+	},
+	parengela: {
+		randomBattleMoves: ["airslash", "aurasphere", "dazzlinggleam", "nastyplot", "roost", "thunderwave", "trick"],
+		randomBattleLevel: 80,
+		tier: "RU",
+	},
+	perripus: {
+		randomBattleMoves: ["closecombat", "darkestlariat", "liquidation", "raindance"],
+		randomBattleLevel: 84,
+		tier: "(PU)",
+	},
+	phracer: {
+		randomBattleMoves: ["knockoff", "ironhead", "protect", "phantomforce", "shadowsneak", "substitute", "batonpass"],
+		randomBattleLevel: 80,
+		tier: "UU",
+	},
+	potogreed: {
+		randomBattleMoves: ["shadowball", "metronome", "powergem", "shellsmash"],
+		randomBattleLevel: 80,
+		tier: "NU",
+	},
+	renagede: {
+		randomBattleMoves: ["bulletbunch", "meteormash", "earthquake", "knockoff"],
+		randomBattleLevel: 80,
+		tier: "OU",
+	},
+	repsac: {
+		randomBattleMoves: ["dazzlinggleam", "destinybond", "nastyplot", "painsplit", "shadowball", "substitute", "taunt", "thunderbolt", "willowisp"],
+		randomBattleLevel: 86,
+		tier: "NU",
+	},
+	rickle: {
+		randomBattleMoves: ["focusblast", "gigadrain", "hiddenpowerflying", "hiddenpowerice", "leafstorm"],
+		randomBattleLevel: 84,
+		tier: "NU",
 	},
 };

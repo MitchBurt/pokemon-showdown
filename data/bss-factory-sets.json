@@ -1,36 +1,4 @@
 {
-  "cinderace": {
-    "usage": 10,
-    "sets": [
-      {
-        "species": "Cinderace",
-        "gigantamax": true,
-        "item": ["Focus Sash"],
-        "ability": ["Libero"],
-        "evs": {"atk": 252, "spd": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Pyro Ball"], ["High Jump Kick", "Counter"], ["Bounce", "Sucker Punch"], ["Iron Head", "Gunk Shot", "Zen Headbutt"]]
-      },
-      {
-        "species": "Cinderace",
-        "gigantamax": true,
-        "item": ["Choice Scarf"],
-        "ability": ["Libero"],
-        "evs": {"atk": 252, "spd": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Pyro Ball"], ["High Jump Kick"], ["Bounce"], ["Iron Head"]]
-      },
-      {
-        "species": "Cinderace",
-        "gigantamax": true,
-        "item": ["Scope Lens"],
-        "ability": ["Libero"],
-        "evs": {"atk": 252, "spd": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Pyro Ball"], ["Bounce"], ["Iron Head"], ["Focus Energy"]]
-      }
-    ]
-  },
   "zapdos": {
     "usage": 10,
     "sets": [
@@ -163,29 +131,6 @@
         "nature": "Timid",
         "ivs": {"atk": 0},
         "moves": [["Power Gem"], ["Sludge Wave", "Toxic Spikes"], ["Stealth Rock"], ["Thunder Wave"]]
-      }
-    ]
-  },
-  "rillaboom": {
-    "usage": 8,
-    "sets": [
-      {
-        "species": "Rillaboom",
-        "gigantamax": true,
-        "item": ["Choice Band"],
-        "ability": ["Grassy Surge"],
-        "evs": {"hp": 252, "atk": 252, "def": 4},
-        "nature": "Adamant",
-        "moves": [["Grassy Glide"], ["Superpower"], ["Knock Off"], ["High Horsepower", "U-turn", "Wood Hammer"]]
-      },
-      {
-        "species": "Rillaboom",
-        "gigantamax": true,
-        "item": ["Grassy Seed"],
-        "ability": ["Grassy Surge"],
-        "evs": {"atk": 252, "def": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Grassy Glide"], ["Acrobatics"], ["Drain Punch"], ["Swords Dance"]]
       }
     ]
   },
@@ -963,37 +908,6 @@
       }
     ]
   },
-  "grimmsnarl": {
-    "usage": 5,
-    "sets": [
-      {
-        "species": "Grimmsnarl",
-        "item": ["Light Clay"],
-        "ability": ["Prankster"],
-        "evs": {"hp": 252, "def": 252, "spd": 4},
-        "nature": "Impish",
-        "moves": [["Light Screen"], ["Reflect"], ["Spirit Break"], ["Taunt", "Thunder Wave"]]
-      },
-      {
-        "species": "Grimmsnarl",
-        "gigantamax": true,
-        "item": ["Lagging Tail"],
-        "ability": ["Prankster"],
-        "evs": {"hp": 252, "atk": 252, "spd": 4},
-        "nature": "Adamant",
-        "moves": [["Trick"], ["Spirit Break"], ["Sucker Punch"], ["Light Screen", "Reflect"]]
-      },
-      {
-        "species": "Grimmsnarl",
-        "gigantamax": true,
-        "item": ["Sitrus Berry", "Leftovers"],
-        "ability": ["Prankster"],
-        "evs": {"hp": 252, "atk": 4, "spd": 252},
-        "nature": "Careful",
-        "moves": [["Sucker Punch", "Darkest Lariat"], ["Spirit Break", "Play Rough", "Drain Punch"], ["Bulk Up"], ["Substitute", "Thunder Wave"]]
-      }
-    ]
-  },
   "tapukoko": {
     "usage": 6,
     "sets": [
@@ -1715,35 +1629,6 @@
       }
     ]
   },
-  "corviknight": {
-    "usage": 5,
-    "sets": [
-      {
-        "species": "Corviknight",
-        "item": ["Rocky Helmet"],
-        "ability": ["Mirror Armor"],
-        "evs": {"hp": 252, "def": 252, "spd": 4},
-        "nature": "Impish",
-        "moves": [["Brave Bird"], ["Body Press"], ["Iron Defense"], ["Roost"]]
-      },
-      {
-        "species": "Corviknight",
-        "item": ["Weakness Policy"],
-        "ability": ["Mirror Armor"],
-        "evs": {"hp": 252, "atk": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Brave Bird"], ["Iron Head"], ["Bulk Up"], ["Roost"]]
-      },
-      {
-        "species": "Corviknight",
-        "item": ["Maranga Berry"],
-        "ability": ["Pressure"],
-        "evs": {"hp": 252, "def": 4, "spd": 252},
-        "nature": "Careful",
-        "moves": [["Brave Bird"], ["Taunt", "Iron Head"], ["Bulk Up"], ["Roost"]]
-      }
-    ]
-  },
   "gengar": {
     "usage": 1,
     "sets": [
@@ -1968,31 +1853,6 @@
         "nature": "Modest",
         "ivs": {"atk": 0},
         "moves": [["Hydro Pump"], ["Ice Beam"], ["Recover"], ["Mud Shot", "Mirror Coat"]]
-      }
-    ]
-  },
-  "hatterene": {
-    "usage": 1,
-    "sets": [
-      {
-        "species": "Hatterene",
-        "gigantamax": true,
-        "item": ["Focus Sash", "Life Orb"],
-        "ability": ["Magic Bounce"],
-        "evs": {"hp": 252, "def": 4, "spa": 252},
-        "nature": "Quiet",
-        "ivs": {"atk": 0, "spe": 0},
-        "moves": [["Trick Room"], ["Psychic"], ["Dazzling Gleam", "Misty Explosion"], ["Mystical Fire"]]
-      },
-      {
-        "species": "Hatterene",
-        "gigantamax": true,
-        "item": ["Big Root"],
-        "ability": ["Magic Bounce"],
-        "evs": {"hp": 252, "def": 252, "spa": 4},
-        "nature": "Bold",
-        "ivs": {"atk": 0, "spe": 0},
-        "moves": [["Psyshock"], ["Draining Kiss"], ["Giga Drain"], ["Calm Mind"]]
       }
     ]
   },
@@ -2610,30 +2470,6 @@
         "nature": "Bold",
         "ivs": {"atk": 0},
         "moves": [["Draining Kiss"], ["Leech Seed"], ["Synthesis"], ["Giga Drain", "Charm", "Protect"]]
-      }
-    ]
-  },
-  "toxtricity": {
-    "usage": 1,
-    "sets": [
-      {
-        "species": "Toxtricity",
-        "item": ["Assault Vest"],
-        "ability": ["Punk Rock"],
-        "evs": {"hp": 108, "spa": 252, "spe": 148},
-        "nature": "Modest",
-        "ivs": {"atk": 0},
-        "moves": [["Overdrive"], ["Nuzzle"], ["Boomburst"], ["Hex"]]
-      },
-      {
-        "species": "Toxtricity",
-        "gigantamax": true,
-        "item": ["Throat Spray"],
-        "ability": ["Punk Rock"],
-        "evs": {"spa": 252, "spd": 4, "spe": 252},
-        "nature": "Timid",
-        "ivs": {"atk": 0},
-        "moves": [["Overdrive"], ["Sludge Wave"], ["Boomburst"], ["Shift Gear"]]
       }
     ]
   },

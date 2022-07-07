@@ -68,8 +68,8 @@ export const Aliases: {[alias: string]: string} = {
 	gen6ag: "[Gen 6] Anything Goes",
 	crossevo: "[Gen 8] Cross Evolution",
 	mayhem: "[Gen 8] Random Battle Mayhem",
-	omotm: "[Gen 8] Broken Record",
-	lcotm: "[Gen 8] Inheritance",
+	omotm: "[Gen 8] Sketchmons",
+	lcotm: "[Gen 8] Flipped",
 
 	// mega evos
 	fabio: "Ampharos-Mega",
@@ -212,8 +212,6 @@ export const Aliases: {[alias: string]: string} = {
 	thundyt: "Thundurus-Therian",
 	tornadust: "Tornadus-Therian",
 	tornt: "Tornadus-Therian",
-	toxtricityl: "Toxtricity-Low-Key",
-	toxtricitylk: "Toxtricity-Low-Key",
 	wormadamg: "Wormadam-Sandy",
 	wormadamground: "Wormadam-Sandy",
 	wormadamsandycloak: "Wormadam-Sandy",
@@ -323,8 +321,6 @@ export const Aliases: {[alias: string]: string} = {
 	wishiwashisolo: "Wishiwashi",
 	pokestarufof: "Pokestar UFO",
 	pokestarufoflying: "Pokestar UFO",
-	toxtricitya: "Toxtricity",
-	toxtricityamped: "Toxtricity",
 	ufof: "Pokestar UFO",
 	ufoflying: "Pokestar UFO",
 	vivillonmeadow: "Vivillon",
@@ -361,14 +357,6 @@ export const Aliases: {[alias: string]: string} = {
 	totemkommoo: "Kommo-o-Totem",
 
 	// cosmetic formes
-	alcremierubycream: "Alcremie",
-	alcremiematchacream: "Alcremie",
-	alcremiemintcream: "Alcremie",
-	alcremielemoncream: "Alcremie",
-	alcremiesaltedcream: "Alcremie",
-	alcremierubyswirl: "Alcremie",
-	alcremiecaramelswirl: "Alcremie",
-	alcremierainbowswirl: "Alcremie",
 	burmygrass: "Burmy",
 	burmyplant: "Burmy",
 	burmysandy: "Burmy",
@@ -1007,7 +995,6 @@ export const Aliases: {[alias: string]: string} = {
 	gravitas: "G-Max Gravitas",
 	hydrosnipe: "G-Max Hydrosnipe",
 	malodor: "G-Max Malodor",
-	meltdown: "G-Max Meltdown",
 	oneblow: "G-Max One Blow",
 	rapidflow: "G-Max Rapid Flow",
 	replenish: "G-Max Replenish",
@@ -1829,6 +1816,4 @@ export const Aliases: {[alias: string]: string} = {
 	aagoyon: "Naganadel",
 	tsundetsunde: "Stakataka",
 	zugadoon: "Blacephalon",
-	merutan: "Meltan",
-	merumetaru: "Melmetal",
 };

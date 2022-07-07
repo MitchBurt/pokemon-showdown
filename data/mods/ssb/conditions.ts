@@ -2393,7 +2393,7 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			}
 			this.add('-sidestart', side, 'move: G-Max Steelsurge');
 		},
-		onEntryHazard(pokemon) {
+		onSwitchIn(pokemon) {
 			if (pokemon.hasItem('heavydutyboots')) return;
 			// Ice Face and Disguise correctly get typed damage from Stealth Rock
 			// because Stealth Rock bypasses Substitute.
@@ -2420,8 +2420,9 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			this.add('-sidestart', side, 'Spikes');
 			this.effectState.layers++;
 		},
-		onEntryHazard(pokemon) {
-			if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+		onSwitchIn(pokemon) {
+			if (!pokemon.isGrounded()) return;
+			if (pokemon.hasItem('heavydutyboots')) return;
 			const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
 			this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
 		},
@@ -2435,7 +2436,7 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			}
 			this.add('-sidestart', side, 'move: Stealth Rock');
 		},
-		onEntryHazard(pokemon) {
+		onSwitchIn(pokemon) {
 			if (pokemon.hasItem('heavydutyboots')) return;
 			const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 			this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
@@ -2450,8 +2451,9 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			}
 			this.add('-sidestart', side, 'move: Sticky Web');
 		},
-		onEntryHazard(pokemon) {
-			if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+		onSwitchIn(pokemon) {
+			if (!pokemon.isGrounded()) return;
+			if (pokemon.hasItem('heavydutyboots')) return;
 			this.add('-activate', pokemon, 'move: Sticky Web');
 			this.boost({spe: -1}, pokemon, pokemon.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
 		},
@@ -2471,7 +2473,7 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			this.add('-sidestart', side, 'move: Toxic Spikes');
 			this.effectState.layers++;
 		},
-		onEntryHazard(pokemon) {
+		onSwitchIn(pokemon) {
 			if (!pokemon.isGrounded()) return;
 			if (pokemon.hasType('Poison')) {
 				this.add('-sideend', pokemon.side, 'move: Toxic Spikes', '[of] ' + pokemon);
@@ -2505,9 +2507,6 @@ export const Conditions: {[k: string]: ModdedConditionData & {innateName?: strin
 			if (pokemon.volatiles['torment']) {
 				delete pokemon.volatiles['torment'];
 				this.add('-end', pokemon, 'Torment', '[silent]');
-			}
-			if (['cramorantgulping', 'cramorantgorging'].includes(pokemon.species.id) && !pokemon.transformed) {
-				pokemon.formeChange('cramorant');
 			}
 			this.add('-start', pokemon, 'Dynamax');
 			if (pokemon.gigantamax) this.add('-formechange', pokemon, pokemon.species.name + '-Gmax');

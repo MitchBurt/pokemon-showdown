@@ -520,7 +520,7 @@ export class RandomTeams {
 		// Picks `n` random pokemon--no repeats, even among formes
 		// Also need to either normalize for formes or select formes at random
 		// Unreleased are okay but no CAP
-		const last = [0, 151, 251, 386, 493, 649, 721, 807, 890][this.gen];
+		const last = [0, 151, 251, 386, 493, 649, 721, 811, 890][this.gen];
 
 		if (n <= 0 || n > last) throw new Error(`n must be a number between 1 and ${last} (got ${n})`);
 		if (requiredType && !this.dex.types.get(requiredType).exists) {
@@ -1032,8 +1032,8 @@ export class RandomTeams {
 		// Reject moves that need support
 		switch (move.id) {
 		case 'acrobatics': case 'junglehealing':
-			// Special case to prevent lead Acrobatics Rillaboom
-			return {cull: (species.id.startsWith('rillaboom') && isLead) || (!isDoubles && !counter.setupType)};
+			// Special case to prevent lead Acrobatics Chansey
+			return {cull: (species.id.startsWith('Chansey') && isLead) || (!isDoubles && !counter.setupType)};
 		case 'dualwingbeat': case 'fly':
 			return {cull: !types.has(move.type) && !counter.setupType && !!counter.get('Status')};
 		case 'healbell':
@@ -1333,9 +1333,6 @@ export class RandomTeams {
 		case 'photongeyser':
 			// Special case for Necrozma-DM, which always wants Dragon Dance
 			return {cull: moves.has('morningsun')};
-		case 'psychic':
-			const alcremieCase = species.id === 'alcremiegmax' && counter.get('Status') < 2;
-			return {cull: alcremieCase || (moves.has('psyshock') && (!!counter.setupType || isDoubles))};
 		case 'psychicfangs':
 			// Special case for Morpeko, which doesn't want 4 attacks Leftovers
 			return {cull: moves.has('rapidspin')};
@@ -1629,7 +1626,7 @@ export class RandomTeams {
 				['Drizzle', 'Strong Jaw', 'Unaware', 'Volt Absorb'].some(abil => abilities.has(abil))
 			);
 		case 'Weak Armor':
-			// The Speed less than 50 case is intended for Cursola, but could apply to any slow Pokémon.
+			// The Speed less than 50 case is intended for Corsola, but could apply to any slow Pokémon.
 			return (
 				(!isNoDynamax && species.baseStats.spe > 50) ||
 				species.id === 'skarmory' ||
@@ -1878,14 +1875,6 @@ export class RandomTeams {
 			!counter.get('drain') && !counter.get('recoil') && !counter.get('recovery') &&
 			((defensiveStatTotal <= 250 && counter.get('hazards')) || defensiveStatTotal <= 210)
 		) return 'Focus Sash';
-		if (
-			moves.has('clangoroussoul') ||
-			// We manually check for speed-boosting moves, rather than using `counter.get('speedsetup')`,
-			// because we want to check for ANY speed boosting move.
-			// In particular, Shift Gear + Boomburst Toxtricity should get Throat Spray.
-			(moves.has('boomburst') && Array.from(moves).some(m => Dex.moves.get(m).boosts?.spe))
-		) return 'Throat Spray';
-
 		const rockWeaknessCase = (
 			this.dex.getEffectiveness('Rock', species) >= 1 &&
 			(!teamDetails.defog || ability === 'Intimidate' || moves.has('uturn') || moves.has('voltswitch'))
@@ -2413,10 +2402,9 @@ export class RandomTeams {
 			case 'Necrozma': case 'Calyrex':
 				if (this.randomChance(2, 3)) continue;
 				break;
-			case 'Magearna': case 'Toxtricity': case 'Zacian': case 'Zamazenta': case 'Zarude':
-			case 'Appletun': case 'Blastoise': case 'Butterfree': case 'Copperajah': case 'Grimmsnarl':
-			case 'Inteleon': case 'Rillaboom': case 'Snorlax': case 'Urshifu': case 'Giratina': case 'Genesect':
-			case 'Cinderace':
+			case 'Magearna': case 'Zacian': case 'Zamazenta': case 'Zarude':
+			case 'Blastoise': case 'Butterfree': case 'Copperajah':
+			case 'Inteleon': case 'Snorlax': case 'Urshifu': case 'Giratina': case 'Genesect':
 				if (this.gen >= 8 && this.randomChance(1, 2)) continue;
 				break;
 			}

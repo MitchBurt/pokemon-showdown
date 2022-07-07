@@ -1344,34 +1344,6 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: 265,
 	},
-	gulpmissile: {
-		onDamagingHit(damage, target, source, move) {
-			if (!source.hp || !source.isActive || target.transformed || target.isSemiInvulnerable()) return;
-			if (['cramorantgulping', 'cramorantgorging'].includes(target.species.id)) {
-				this.damage(source.baseMaxhp / 4, source, target);
-				if (target.species.id === 'cramorantgulping') {
-					this.boost({def: -1}, source, target, null, true);
-				} else {
-					source.trySetStatus('par', target, move);
-				}
-				target.formeChange('cramorant', move);
-			}
-		},
-		// The Dive part of this mechanic is implemented in Dive's `onTryMove` in moves.ts
-		onSourceTryPrimaryHit(target, source, effect) {
-			if (
-				effect && effect.id === 'surf' && source.hasAbility('gulpmissile') &&
-				source.species.name === 'Cramorant' && !source.transformed
-			) {
-				const forme = source.hp <= source.maxhp / 2 ? 'cramorantgorging' : 'cramorantgulping';
-				source.formeChange(forme, effect);
-			}
-		},
-		isPermanent: true,
-		name: "Gulp Missile",
-		rating: 2.5,
-		num: 241,
-	},
 	guts: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {

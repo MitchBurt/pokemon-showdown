@@ -697,16 +697,13 @@ export const Conditions: {[k: string]: ConditionData} = {
 	dynamax: {
 		name: 'Dynamax',
 		noCopy: true,
+		duration: 3,
 		onStart(pokemon) {
-			this.effectState.turns = 0;
 			pokemon.removeVolatile('minimize');
 			pokemon.removeVolatile('substitute');
 			if (pokemon.volatiles['torment']) {
 				delete pokemon.volatiles['torment'];
 				this.add('-end', pokemon, 'Torment', '[silent]');
-			}
-			if (['cramorantgulping', 'cramorantgorging'].includes(pokemon.species.id) && !pokemon.transformed) {
-				pokemon.formeChange('cramorant');
 			}
 			this.add('-start', pokemon, 'Dynamax', pokemon.gigantamax ? 'Gmax' : '');
 			if (pokemon.baseSpecies.name === 'Shedinja') return;
@@ -736,9 +733,6 @@ export const Conditions: {[k: string]: ConditionData} = {
 			return null;
 		},
 		onResidualPriority: -100,
-		onResidual() {
-			this.effectState.turns++;
-		},
 		onEnd(pokemon) {
 			this.add('-end', pokemon, 'Dynamax');
 			if (pokemon.baseSpecies.name === 'Shedinja') return;

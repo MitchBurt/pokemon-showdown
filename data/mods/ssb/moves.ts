@@ -878,7 +878,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			this.add('-anim', source, 'Petal Dance', target);
 		},
 		onModifyMove(move, source, target) {
-			if (target && target.getStat('def', false, true) < target.getStat('spd', false, true)) {
+			if (target && target.getStat('def') < target.getStat('spd')) {
 				move.category = "Physical";
 			}
 		},
@@ -911,9 +911,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 				if (move.overrideOffensiveStat && !['atk', 'spa'].includes(move.overrideOffensiveStat)) return;
 				const attacker = move.overrideOffensivePokemon === 'target' ? target : source;
 				if (!attacker) return;
-				const attackerAtk = attacker.getStat('atk', false, true);
-				const attackerSpa = attacker.getStat('spa', false, true);
-				move.overrideOffensiveStat = attackerAtk > attackerSpa ? 'spa' : 'atk';
+				move.overrideOffensiveStat = attacker.getStat('atk') > attacker.getStat('spa') ? 'spa' : 'atk';
 			},
 			// Stat modifying in scripts.ts
 			onFieldStart(field, source, effect) {
@@ -1652,45 +1650,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Ice",
 	},
 
-	// Finland
-	cradilychaos: {
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		desc: "All Pokemon on the field get a +1 boost to a random stat. The target is badly poisoned, regardless of typing. If the user is Alcremie, it changes to a non-Vanilla Cream forme.",
-		shortDesc: "Random boosts to all mons. Tox. Change forme.",
-		name: "Cradily Chaos",
-		gen: 8,
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1},
-		onTryMove() {
-			this.attrLastMove('[still]');
-		},
-		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Psywave', target);
-		},
-		onHit(target, source, move) {
-			const boosts: BoostID[] = ['atk', 'def', 'spa', 'spd', 'spe'];
-			const selfBoost: SparseBoostsTable = {};
-			selfBoost[boosts[this.random(5)]] = 1;
-			const oppBoost: SparseBoostsTable = {};
-			oppBoost[boosts[this.random(5)]] = 1;
-			this.boost(selfBoost, source);
-			this.boost(oppBoost, target);
-			target.trySetStatus('tox', source);
-			if (source.species.baseSpecies === 'Alcremie') {
-				const formes = ['Finland', 'Finland-Tsikhe', 'Finland-Nezavisa', 'Finland-Järvilaulu']
-					.filter(forme => ssbSets[forme].species !== source.species.name);
-				const newSet = this.sample(formes);
-				changeSet(this, source, ssbSets[newSet]);
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Poison",
-	},
-
 	// frostyicelad
 	frostywave: {
 		accuracy: 100,
@@ -2177,42 +2136,6 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Dark",
 	},
 
-	// Jho
-	genrechange: {
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		desc: "If the user is a Toxtricity, it changes into its Low-Key forme and Nasty Plot and Overdrive change to Aura Sphere and Boomburst, respectively. If the user is a Toxtricity in its Low-Key forme, it changes into its Amped forme and Aura Sphere and Boomburst turn into Nasty Plot and Overdrive, respectively. Raises the user's Speed by 1 stage.",
-		shortDesc: "Toxtricity: +1 Speed. Changes forme.",
-		name: "Genre Change",
-		gen: 8,
-		pp: 5,
-		priority: 0,
-		flags: {snatch: 1, sound: 1},
-		onTryMove(pokemon, target, move) {
-			this.attrLastMove('[still]');
-		},
-		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Screech', source);
-			// The transform animation is done via `formeChange`
-		},
-		onHit(pokemon) {
-			if (pokemon.species.baseSpecies === 'Toxtricity') {
-				if (pokemon.species.forme === 'Low-Key') {
-					changeSet(this, pokemon, ssbSets['Jho']);
-				} else {
-					changeSet(this, pokemon, ssbSets['Jho-Low-Key']);
-				}
-			}
-		},
-		boosts: {
-			spe: 1,
-		},
-		secondary: null,
-		target: "self",
-		type: "Normal",
-	},
-
 	// Jordy
 	archeopssrage: {
 		accuracy: 85,
@@ -2421,11 +2344,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		onTryMove() {
 			this.attrLastMove('[still]');
 		},
-		onTryHit(source) {
-			if (!this.canSwitch(source.side)) {
-				this.attrLastMove('[still]');
-				this.add('-fail', source);
-				return this.NOT_FAIL;
+		onTryHit(pokemon, target, move) {
+			if (!this.canSwitch(pokemon.side)) {
+				delete move.selfdestruct;
+				return false;
 			}
 		},
 		selfdestruct: "ifHit",
@@ -5328,7 +5250,9 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		},
 	},
 
-	// Try playing Staff Bros without dynamax and see what happens
+	// :^)
+	// Remnant of an AFD past. Thank u for the memes.
+	/*
 	supermetronome: {
 		accuracy: true,
 		basePower: 0,
@@ -5372,4 +5296,5 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		target: "self",
 		type: "???",
 	},
+	*/
 };

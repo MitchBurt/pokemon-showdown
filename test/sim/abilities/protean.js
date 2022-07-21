@@ -12,7 +12,7 @@ describe('Protean', function () {
 
 	it(`should change the user's type when using a move`, function () {
 		battle = common.createBattle([[
-			{species: 'Cinderace', ability: 'protean', moves: ['highjumpkick']},
+			{species: 'Bonsly', ability: 'protean', moves: ['highjumpkick']},
 		], [
 			{species: 'Gengar', moves: ['sleeptalk']},
 		]]);

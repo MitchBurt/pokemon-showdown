@@ -50,7 +50,7 @@ describe("Accuracy", function () {
 			{species: 'Mewtwo', ability: 'victorystar', moves: ['gravity', 'sleeptalk', 'sandattack']},
 			{species: 'Charizard', ability: 'compoundeyes', moves: ['sleeptalk', 'fireblast']},
 		], [
-			{species: 'Bonsly', ability: 'tangledfeet', moves: ['doubleteam', 'sleeptalk']},
+			{species: 'Magby', ability: 'tangledfeet', moves: ['doubleteam', 'sleeptalk']},
 			{species: 'Pyukumuku', ability: 'noguard', moves: ['confuseray', 'sandattack', 'sleeptalk']},
 		]]);
 

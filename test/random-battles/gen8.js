@@ -7,7 +7,7 @@ const {testSet, testNotBothMoves, testHasSTAB, testAlwaysHasMove} = require('./t
 const assert = require('../assert');
 const {Dex} = require('../../sim/dex');
 
-describe('[Gen 8] Random Battle', () => {
+describe('[Dario] Random Battle', () => {
 	const options = {format: 'gen8randombattle'};
 
 	it('should not generate Golisopod without Bug STAB', () => {
@@ -200,7 +200,7 @@ describe('[Gen 8] Random Doubles Battle', () => {
 	});
 });
 
-describe('[Gen 8] Random Battle (No Dmax)', () => {
+describe('[Dario] Random Battle (No Dmax)', () => {
 	// No tests here yet!
 	// This format is extremely new; this will be filled in later when I have to fix No Dmax bugs.
 

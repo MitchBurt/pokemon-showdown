@@ -49,7 +49,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen7',
 		team: 'random',
-		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod'],
+		ruleset: ['Obtainable', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 	{
 		name: "[Gen 8] Unrated Random Battle",
@@ -73,9 +73,9 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 8] Random Battle (Blitz)",
 
-		mod: 'gen8',
+		mod: 'gen7',
 		team: 'random',
-		ruleset: ['[Gen 8] Random Battle', 'Blitz'],
+		ruleset: ['[Dario] Random Battle', 'Blitz'],
 	},
 	{
 		name: "[Gen 8] Multi Random Battle",
@@ -986,7 +986,7 @@ export const Formats: FormatList = [
 
 		mod: 'gen8bdsp',
 		team: 'random',
-		ruleset: ['[Gen 8] Random Battle', '!PotD'],
+		ruleset: ['[Dario] Random Battle'],
 	},
 	{
 		name: "[Gen 8 BDSP] OU",
@@ -2133,18 +2133,18 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 8] Random Battle (No Dmax)",
 
-		mod: 'gen8',
+		mod: 'gen7',
 		team: 'random',
 		searchShow: false,
-		ruleset: ['[Gen 8] Random Battle', 'Dynamax Clause'],
+		ruleset: ['[Dario] Random Battle', 'Dynamax Clause'],
 	},
 	{
 		name: "[Gen 8] Random Battle Mayhem",
-		desc: `[Gen 8] Random Battle (No Dmax) with Team Preview and elements of Camomons, Inverse, Scalemons, and Shared Power.`,
+		desc: `[Dario] Random Battle (No Dmax) with Team Preview and elements of Camomons, Inverse, Scalemons, and Shared Power.`,
 
 		mod: 'sharedpower',
 		team: 'random',
-		ruleset: ['[Gen 8] Random Battle', 'Team Preview', 'Dynamax Clause', 'Camomons Mod', 'Inverse Mod', 'Scalemons Mod'],
+		ruleset: ['[Dario] Random Battle', 'Team Preview', 'Dynamax Clause', 'Camomons Mod', 'Inverse Mod', 'Scalemons Mod'],
 		onBeforeSwitchIn(pokemon) {
 			let format = this.format;
 			if (!format.getSharedPower) format = this.dex.formats.get('gen8sharedpower');

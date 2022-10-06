@@ -15301,6 +15301,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 0.3,
 		color: "Pink",
 		eggGroups: ["Fairy", "Amorphous"],
+		gen:7,
 	},
 	rock: {
 		num: 869,
@@ -15313,6 +15314,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 0.5,
 		color: "Brown",
 		eggGroups: ["Mineral"],
+		gen:7,
 	},
 	sawsbaws: {
 		num: 870,
@@ -15325,6 +15327,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 62,
 		color: "Brown",
 		eggGroups: ["Field"],
+		gen:7,
 	},
 	senketula: {
 		num: 871,
@@ -15336,6 +15339,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 1,
 		color: "Black",
 		eggGroups: ["Amorphous"],
+		gen:7,
 	},
 	shapoopyz: {
 		num: 872,
@@ -15347,6 +15351,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 3.8,
 		color: "White",
 		eggGroups: ["Bug"],
+		gen:7,
 	},
 	shepeird: {
 		num: 873,
@@ -15358,6 +15363,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 42,
 		color: "White",
 		eggGroups: ["Field"],
+		gen:7,
 	},
 	shockitty: {
 		num: 874,
@@ -15371,6 +15377,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Yellow",
 		tags: ["Sub-Legendary"],
 		eggGroups: ["Undiscovered"],
+		gen:7,
 	},
 	skorpyros: {
 		num: 875,
@@ -15382,6 +15389,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 190,
 		color: "Red",
 		eggGroups: ["Field"],
+		gen:7,
 	},
 	sneddit: {
 		num: 876,
@@ -15394,6 +15402,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 28,
 		color: "White",
 		eggGroups: ["Fairy"],
+		gen:7,
 	},
 	speriathan: {
 		num: 877,
@@ -15405,6 +15414,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 98,
 		color: "Blue",
 		eggGroups: ["Field", "Fairy"],
+		gen:7,
 	},
 	surbsquach: {
 		num: 878,
@@ -15416,6 +15426,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 100,
 		color: "Brown",
 		eggGroups: ["Field", "Human-Like"],
+		gen:7,
 	},
 	titenic: {
 		num: 879,
@@ -15427,6 +15438,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 650,
 		color: "Red",
 		eggGroups: ["Field", "Mineral"],
+		gen:7,
 	},
 	tom: {
 		num: 880,
@@ -15439,6 +15451,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 150,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		gen:7,
 	},
 	toncrete: {
 		num: 881,
@@ -15451,6 +15464,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 150,
 		color: "Brown",
 		eggGroups: ["Human-Like"],
+		gen:7,
 	},
 	trololo: {
 		num: 882,
@@ -15463,6 +15477,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 215,
 		color: "White",
 		eggGroups: ["Undiscovered"],
+		gen:7,
 	},
 	unjoy: {
 		num: 883,
@@ -15475,6 +15490,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 29,
 		color: "Pink",
 		eggGroups: ["Undiscovered"],
+		gen:7,
 	},
 	vcrbrain: {
 		num: 884,
@@ -15486,6 +15502,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Pink",
 		eggGroups: ["Mineral"],
+		gen:7,
 	},
 	xokkeon: {
 		num: 885,
@@ -15497,6 +15514,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 90,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
+		gen:7,
 	},
 	yeesaur: {
 		num: 886,
@@ -15508,6 +15526,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 11,
 		color: "Green",
 		eggGroups: ["Dragon", "Mineral"],
+		gen:7,
 	},
 	yggdracon: {
 		num: 887,
@@ -15519,6 +15538,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 50,
 		color: "Green",
 		eggGroups: ["Field", "Dragon"],
+		gen:7,
 	},
 	zactory: {
 		num: 888,
@@ -15531,6 +15551,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 110,
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
+		gen:7,
 	},
 	zeruel: {
 		num: 889,
@@ -15543,6 +15564,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 210,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		gen:7,
 	},
 	//sugrivous
 	eternatus: {

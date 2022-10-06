@@ -328,7 +328,6 @@ describe('Target Resolution', function () {
 			{species: 'altaria', moves: ['sleeptalk']},
 			{species: 'aggron', moves: ['sleeptalk']},
 		], [
-			{species: 'dragapult', moves: ['phantomforce']},
 			{species: 'regieleki', moves: ['sleeptalk', 'sheercold']},
 		]]);
 
@@ -344,7 +343,6 @@ describe('Target Resolution', function () {
 			{species: 'altaria', moves: ['sleeptalk']},
 			{species: 'aggron', moves: ['sleeptalk']},
 		], [
-			{species: 'dragapult', moves: ['phantomforce']},
 			{species: 'regieleki', moves: ['sleeptalk', 'sheercold']},
 		]]);
 

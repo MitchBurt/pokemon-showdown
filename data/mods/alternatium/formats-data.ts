@@ -459,26 +459,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 	},
-	zacian: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	zaciancrowned: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	zamazenta: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	zamazentacrowned: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	eternatus: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
 	manustorm: {
 		tier: "OU",
 		doublesTier: "DOU",

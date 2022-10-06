@@ -2228,7 +2228,7 @@ export class RandomTeams {
 			};
 			const customScale: {[k: string]: number} = {
 				// These Pokemon are too strong and need a lower level
-				zaciancrowned: 65, calyrexshadow: 68, xerneas: 70, necrozmaduskmane: 72, zacian: 72, kyogre: 73, eternatus: 73,
+				calyrexshadow: 68, xerneas: 70, necrozmaduskmane: 72, kyogre: 73,
 				zekrom: 74, marshadow: 75, glalie: 78, urshifurapidstrike: 79, haxorus: 80, inteleon: 80,
 				cresselia: 83, octillery: 84, jolteon: 84, swoobat: 84, dugtrio: 84, slurpuff: 84, polteageist: 84,
 				wobbuffet: 86, scrafty: 86,
@@ -2402,7 +2402,7 @@ export class RandomTeams {
 			case 'Necrozma': case 'Calyrex':
 				if (this.randomChance(2, 3)) continue;
 				break;
-			case 'Magearna': case 'Zacian': case 'Zamazenta': case 'Zarude':
+			case 'Magearna': case 'Zarude':
 			case 'Blastoise': case 'Butterfree': case 'Copperajah':
 			case 'Inteleon': case 'Snorlax': case 'Urshifu': case 'Giratina': case 'Genesect':
 				if (this.gen >= 8 && this.randomChance(1, 2)) continue;
@@ -2412,12 +2412,12 @@ export class RandomTeams {
 			// Illusion shouldn't be on the last slot
 			if (species.name === 'Zoroark' && pokemon.length >= (this.maxTeamSize - 1)) continue;
 			// The sixth slot should not be Zacian/Zamazenta/Eternatus if a Zoroark is present
-			if (
-				pokemon.some(pkmn => pkmn.species === 'Zoroark') &&
-				['Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Eternatus'].includes(species.name)
-			) {
-				continue;
-			}
+		//	if (
+				//pokemon.some(pkmn => pkmn.species === 'Zoroark') &&
+				//['Zacian', 'Zacian-Crowned', 'Zamazenta', 'Zamazenta-Crowned', 'Eternatus'].includes(species.name)
+			//) {
+			//	continue;
+			//}
 
 			const tier = species.tier;
 			const types = species.types;

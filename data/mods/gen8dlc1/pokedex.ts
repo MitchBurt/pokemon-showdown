@@ -23,20 +23,4 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		unreleasedHidden: true,
 	},
-	dracozolt: {
-		inherit: true,
-		unreleasedHidden: true,
-	},
-	arctozolt: {
-		inherit: true,
-		unreleasedHidden: true,
-	},
-	dracovish: {
-		inherit: true,
-		unreleasedHidden: true,
-	},
-	arctovish: {
-		inherit: true,
-		unreleasedHidden: true,
-	},
-};
+}

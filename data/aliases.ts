@@ -264,8 +264,6 @@ export const Aliases: {[alias: string]: string} = {
 	ufopsychic: "Pokestar UFO-2",
 	goon: "Obstagoon",
 	rime: "Mr. Rime",
-	zacianc: "Zacian-Crowned",
-	zamazentac: "Zamazenta-Crowned",
 	urshifuss: "Urshifu",
 	urshifusingle: "Urshifu",
 	urshifusinglestrike: "Urshifu",

@@ -527,10 +527,6 @@ export class TeamValidator {
 				tierSpecies = dex.species.get('Kyogre-Primal');
 			} else if (canMegaEvo && species.id === 'rayquaza' && set.moves.map(toID).includes('dragonascent' as ID)) {
 				tierSpecies = dex.species.get('Rayquaza-Mega');
-			} else if (item.id === 'rustedsword' && species.id === 'zacian') {
-				tierSpecies = dex.species.get('Zacian-Crowned');
-			} else if (item.id === 'rustedshield' && species.id === 'zamazenta') {
-				tierSpecies = dex.species.get('Zamazenta-Crowned');
 			}
 		}
 
@@ -841,7 +837,7 @@ export class TeamValidator {
 
 		const cantBreedNorEvolve = (species.eggGroups[0] === 'Undiscovered' && !species.prevo && !species.nfe);
 		const isLegendary = (cantBreedNorEvolve && ![
-			'Pikachu', 'Unown', 'Dracozolt', 'Arctozolt', 'Dracovish', 'Arctovish',
+			'Pikachu', 'Unown',
 		].includes(species.baseSpecies)) || [
 			'Manaphy', 'Cosmog', 'Cosmoem', 'Solgaleo', 'Lunala',
 		].includes(species.baseSpecies);
@@ -1299,16 +1295,6 @@ export class TeamValidator {
 		if (species.name === 'Keldeo' && set.moves.map(toID).includes('secretsword' as ID) && dex.gen >= 8) {
 			set.species = 'Keldeo-Resolute';
 		}
-
-		const crowned: {[k: string]: string} = {
-			'Zacian-Crowned': 'behemothblade', 'Zamazenta-Crowned': 'behemothbash',
-		};
-		if (species.name in crowned) {
-			const behemothMove = set.moves.map(toID).indexOf(crowned[species.name] as ID);
-			if (behemothMove >= 0) {
-				set.moves[behemothMove] = 'ironhead';
-			}
-		}
 		return problems;
 	}
 
@@ -1317,10 +1303,7 @@ export class TeamValidator {
 		const ruleTable = this.ruleTable;
 
 		// https://www.smogon.com/forums/posts/8659168
-		if (
-			(tierSpecies.id === 'zamazentacrowned' && species.id === 'zamazenta') ||
-			(tierSpecies.id === 'zaciancrowned' && species.id === 'zacian')
-		) {
+		{
 			species = tierSpecies;
 		}
 

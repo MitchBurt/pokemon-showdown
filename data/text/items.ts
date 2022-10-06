@@ -579,19 +579,19 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	fossilizedbird: {
 		name: "Fossilized Bird",
-		desc: "Can revive into Dracozolt with Fossilized Drake or Arctozolt with Fossilized Dino.",
+		desc: "Can revive into with Fossilized Drake or Arctozolt with Fossilized Dino.",
 	},
 	fossilizeddino: {
 		name: "Fossilized Dino",
-		desc: "Can revive into Arctovish with Fossilized Fish or Arctozolt with Fossilized Bird.",
+		desc: "Can revive into  with Fossilized Fish or Arctozolt with Fossilized Bird.",
 	},
 	fossilizeddrake: {
 		name: "Fossilized Drake",
-		desc: "Can revive into Dracozolt with Fossilized Bird or Dracovish with Fossilized Fish.",
+		desc: "Can revive into with Fossilized Bird or Dracovish with Fossilized Fish.",
 	},
 	fossilizedfish: {
 		name: "Fossilized Fish",
-		desc: "Can revive into Dracovish with Fossilized Drake or Arctovish with Fossilized Dino.",
+		desc: "Can revive into Dracovish with Fossilized Drake or  with Fossilized Dino.",
 	},
 	friendball: {
 		name: "Friend Ball",
@@ -1452,14 +1452,6 @@ export const ItemsText: {[k: string]: ItemText} = {
 	rowapberry: {
 		name: "Rowap Berry",
 		desc: "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
-	},
-	rustedshield: {
-		name: "Rusted Shield",
-		desc: "If held by a Zamazenta, this item changes its forme to Crowned Shield.",
-	},
-	rustedsword: {
-		name: "Rusted Sword",
-		desc: "If held by a Zacian, this item changes its forme to Crowned Sword.",
 	},
 	sablenite: {
 		name: "Sablenite",

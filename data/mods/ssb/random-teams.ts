@@ -511,12 +511,6 @@ export const ssbSets: SSBSets = {
 		evs: {hp: 4, spa: 252, spe: 252}, ivs: {atk: 0}, nature: 'Timid', shiny: true,
 		skip: 'PartMan',
 	},
-	'peapod c': {
-		species: 'Dragapult', ability: 'Stealth Black', item: 'Leftovers', gender: 'M',
-		moves: ['Hex', 'Dragon Darts', 'Work Up'],
-		signatureMove: 'Submartingale',
-		evs: {atk: 4, spa: 252, spe: 252}, nature: 'Mild',
-	},
 	'Perish Song': {
 		species: 'Rhydon', ability: 'Soup Sipper', item: 'Rocky Helmet', gender: 'M',
 		moves: ['Swords Dance', 'Stealth Rock', 'Rock Blast'],

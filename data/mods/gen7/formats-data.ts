@@ -4948,4 +4948,119 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		randomBattleLevel: 84,
 		tier: "NU",
 	},
+	rigamort: {
+		randomBattleMoves: ["counter", "focusblast", "nastyplot", "psychic", "shadowball"],
+		randomBattleLevel: 78,
+		tier: "UUBL",
+	},
+	rimeslanch: {
+		randomBattleMoves: ["earthquake", "encore", "icebeam", "painsplit", "sludgebomb", "toxic", "yawn"],
+		randomDoubleBattleMoves: ["encore", "icebeam", "poisongas", "protect", "sludgebomb", "yawn"],
+		tier: "(PU)",
+	},
+	rock: {
+		randomBattleMoves: ["earthquake", "explosion", "rockblast", "stealthrock", "suckerpunch", "toxic"],
+		randomBattleLevel: 90,
+		tier: "NU",
+	},
+	sawsbaws: {
+		randomBattleMoves: ["clearsmog", "foulplay", "gigadrain", "hiddenpowerfire", "sludgebomb", "spore", "stunspore", "synthesis"],
+		tier: "NU",
+		randomBattleLevel: 83,
+	},
+	senketula: {
+		randomBattleMoves: ["megahorn", "poisonjab", "stickyweb", "suckerpunch", "toxicspikes"],
+		tier: "(PU)",
+		randomBattleLevel: 83,
+	},
+	shapoopyz: {
+		randomBattleMoves: ["psychic", "shadowball", "thunderbolt", "trick", "trickroom"],
+		randomBattleLevel: 86,
+		tier: "(PU)",
+	},
+	shepeird: {
+		randomBattleMoves: ["bodyslam", "coil", "earthquake", "recover"],
+		randomBattleLevel: 90,
+		tier: "(PU)",
+	},
+	shockitty: {
+		randomBattleMoves: ["aurasphere", "calmmind", "scald", "substitute", "thunderbolt", "voltswitch"],
+		randomBattleLevel: 80,
+		tier: "RU",
+	},
+	skorpyros: {
+		randomBattleMoves: ["xscissor", "heatcrash", "flamewheel", "slash", "roost", "earthquake"],
+		randomBattleLevel: 76,
+		tier: "RU",
+	},
+	sneddit: {
+		randomBattleMoves: ["nastyplot", "psychic", "shadowball", "thunderbolt", "trick"],
+		randomBattleLevel: 86,
+		tier: "(PU)",
+	},
+	speriathan: {
+		randomBattleMoves: ["icebeam", "sludgebomb", "suckerpunch", "waterfall"],
+		randomBattleLevel: 76,
+		tier: "(PU)",
+	},
+	surbsquach: {
+		randomBattleMoves: ["closecombat", "earthquake", "icepunch", "stoneedge", "uturn"],
+		tier: "PU",
+		randomBattleLevel: 83,
+	},
+	titenic: {
+		randomBattleMoves: ["ironhead", "aquajet", "iciclecrash", "waterfall", "explosion"],
+		randomBattleLevel: 84,
+		tier: "PUBL",
+	},
+	tom: {
+		randomBattleMoves: ["slash", "firepunch", "sing", "nightslash", "pursuit", "rest", "sleeptalk"],
+		randomBattleLevel: 84,
+		tier: "(PU)",
+	},
+	tonrete: {
+		randomBattleMoves: ["bodypress", "drainpunch", "earthquake", "explosion", "rest", "rockslide", "stoneedge"],
+		randomBattleLevel: 85,
+		tier: "PU",
+	},
+	trololo:{
+		randomBattleMoves: ["meanlook", "toxic", "strengthsap", "suckerpunch", "foulplay"],
+		randomBattleLevel: 76,
+		tier: "OU",
+	},
+	unjoy:{
+		randomBattleMoves: ["recover", "shadowball", "moonblast", "toxic", "foulplay"],
+		randomBattleLevel: 76,
+		tier: "OU",
+	},
+	vcrbrain:{
+		randomBattleMoves: ["recover", "magnetraise", "thunderbolt", "psychic", "calmmind"],
+		randomBattleLevel: 79,
+		tier: "UU",
+	},
+	xokkeon:{
+		randomBattleMoves: ["crunch", "icefang", "hyperfang", "firefang", "pursuit"],
+		randomBattleLevel: 76,
+		tier: "OU",
+	},
+	yeesaur:{
+		randomBattleMoves: ["crunch", "headsmash", "leafblade", "woodhammer", "accelerock"],
+		randomBattleLevel: 76,
+		tier: "NU",
+	},
+	yggdracon: {
+		randomBattleMoves: ["dragontail", "leechseed", "leafblade", "dragonclaw", "synthesis", "earthquake"],
+		randomBattleLevel: 78,
+		tier: "PUBL",
+	},
+	zactory: {
+		randomBattleMoves: ["earthquake", "ironhead", "roar", "rockslide", "stealthrock", "toxic"],
+		randomBattleLevel: 80,
+		tier: "NU",
+	},
+	zeruel: {
+		randomBattleMoves: ["darkpulse", "moonblast", "nastyplot", "doubleedge", "trick", "toxic"],
+		randomBattleLevel: 80,
+		tier: "NU",
+	},
 };

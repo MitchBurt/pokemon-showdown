@@ -260,7 +260,7 @@ class Giveaway extends Rooms.SimpleRoomGame {
 		const validFemale = [
 			'abomasnow', 'aipom', 'ambipom', 'beautifly', 'bibarel', 'bidoof', 'blaziken', 'buizel', 'cacturne', 'camerupt', 'combee',
 			'combusken', 'croagunk', 'donphan', 'dustox', 'finneon', 'floatzel', 'frillish', 'gabite', 'garchomp', 'gible', 'girafarig',
-			'gligar', 'golbat', 'gulpin', 'heracross', 'hippopotas', 'hippowdon', 'houndoom', 'indeedee', 'jellicent', 'kerfluffle', 'kitsunoh',
+			'gligar', 'golbat', 'gulpin', 'heracross', 'hippopotas', 'hippowdon', 'houndoom', 'jellicent', 'kerfluffle', 'kitsunoh',
 			'kricketot', 'kricketune', 'ledian', 'ledyba', 'ludicolo', 'lumineon', 'luxio', 'luxray', 'magikarp', 'mamoswine', 'medicham',
 			'meditite', 'meganium', 'meowstic', 'milotic', 'murkrow', 'nidoran', 'numel', 'nuzleaf', 'octillery', 'pachirisu', 'pikachu',
 			'pikachu-starter', 'piloswine', 'politoed', 'protowatt', 'pyroar', 'quagsire', 'raticate', 'rattata', 'relicanth', 'rhydon',

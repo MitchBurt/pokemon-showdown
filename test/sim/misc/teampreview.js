@@ -18,27 +18,13 @@ describe('Team Preview', function () {
 		], [
 			{species: 'Silvally', ability: 'rkssystem', moves: ['sleeptalk']},
 			{species: 'Urshifu-Rapid-Strike', ability: 'unseenfist', moves: ['sleeptalk']},
-			{species: 'Zacian', ability: 'intrepidsword', item: 'rustedsword', moves: ['sleeptalk']},
 		]]);
 		for (const line of battle.log) {
 			if (line.startsWith('|poke|')) {
 				const details = line.split('|')[3];
-				assert(details.match(/(Arceus|Pumpkaboo|Gourgeist|Silvally|Urshifu|Zacian)-\*/), `Forme was not hidden; preview details: ${details}`);
+				assert(details.match(/(Arceus|Pumpkaboo|Gourgeist|Silvally|Urshifu)-\*/), `Forme was not hidden; preview details: ${details}`);
 			}
 		}
 	});
 
-	it('should not hide formes of hacked Zacian/Zamazenta formes', function () {
-		battle = common.createBattle([[
-			{species: 'Zacian-Crowned', moves: ['sleeptalk']},
-		], [
-			{species: 'Zamazenta-Crowned', moves: ['sleeptalk']},
-		]]);
-		for (const line of battle.log) {
-			if (line.startsWith('|poke|')) {
-				const details = line.split('|')[3];
-				assert.false(details.includes('-*'), `Forme was hidden; preview details: ${details}`);
-			}
-		}
-	});
 });

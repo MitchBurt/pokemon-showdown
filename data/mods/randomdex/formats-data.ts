@@ -312,14 +312,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 	},
-	indeedee: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	indeedeef: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
 	chimchar: {
 		tier: "LC",
 		doublesTier: "LC",
@@ -847,14 +839,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	litten: {
 		tier: "LC",
-		doublesTier: "DOU",
-	},
-	indeedee: {
-		tier: "OU",
-		doublesTier: "DOU",
-	},
-	indeedeef: {
-		tier: "OU",
 		doublesTier: "DOU",
 	},
 	jolteon: {

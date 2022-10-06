@@ -4653,34 +4653,6 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 212,
 		gen: 4,
 	},
-	rustedshield: {
-		name: "Rusted Shield",
-		spritenum: 699,
-		onTakeItem(item, pokemon, source) {
-			if ((source && source.baseSpecies.num === 889) || pokemon.baseSpecies.num === 889) {
-				return false;
-			}
-			return true;
-		},
-		forcedForme: "Zamazenta-Crowned",
-		itemUser: ["Zamazenta-Crowned"],
-		num: 1104,
-		gen: 8,
-	},
-	rustedsword: {
-		name: "Rusted Sword",
-		spritenum: 698,
-		onTakeItem(item, pokemon, source) {
-			if ((source && source.baseSpecies.num === 888) || pokemon.baseSpecies.num === 888) {
-				return false;
-			}
-			return true;
-		},
-		forcedForme: "Zacian-Crowned",
-		itemUser: ["Zacian-Crowned"],
-		num: 1103,
-		gen: 8,
-	},
 	sablenite: {
 		name: "Sablenite",
 		spritenum: 614,

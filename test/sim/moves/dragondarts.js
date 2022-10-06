@@ -129,7 +129,6 @@ describe('Dragon Darts', function () {
 	it('should hit one target twice if the other is protected by an ability', function () {
 		battle = common.createBattle({gameType: 'doubles'});
 		battle.setPlayer('p1', {team: [
-			{species: "Dragapult", ability: "Clear Body", moves: ["dragondarts"]},
 			{species: "Grimmsnarl", ability: "Prankster", moves: ["electrify"]},
 		]});
 		battle.setPlayer('p2', {team: [
@@ -147,7 +146,6 @@ describe('Dragon Darts', function () {
 	it('should hit one target twice if the other is immunue', function () {
 		battle = common.createBattle({gameType: 'doubles'});
 		battle.setPlayer('p1', {team: [
-			{species: "Dragapult", ability: "Clear Body", moves: ["dragondarts"]},
 			{species: "Ludicolo", ability: "Dancer", moves: ["sleeptalk"]},
 		]});
 		battle.setPlayer('p2', {team: [
@@ -163,7 +161,6 @@ describe('Dragon Darts', function () {
 	it('should hit one target twice if the other is semi-invulnerable', function () {
 		battle = common.createBattle({gameType: 'doubles'});
 		battle.setPlayer('p1', {team: [
-			{species: "Dragapult", item: "Lagging Tail", ability: "Clear Body", moves: ["dragondarts"]},
 			{species: "Ludicolo", ability: "Dancer", moves: ["sleeptalk"]},
 		]});
 		battle.setPlayer('p2', {team: [
@@ -179,7 +176,6 @@ describe('Dragon Darts', function () {
 	it('should hit one target twice if the other is fainted', function () {
 		battle = common.createBattle({gameType: 'doubles'});
 		battle.setPlayer('p1', {team: [
-			{species: "Dragapult", ability: "Clear Body", moves: ["dragondarts"]},
 			{species: "Ludicolo", ability: "Dancer", moves: ["sleeptalk"]},
 		]});
 		battle.setPlayer('p2', {team: [
@@ -197,7 +193,6 @@ describe('Dragon Darts', function () {
 	it('should fail if both targets are fainted', function () {
 		battle = common.createBattle({gameType: 'doubles'});
 		battle.setPlayer('p1', {team: [
-			{species: "Dragapult", ability: "Clear Body", moves: ["dragondarts"]},
 			{species: "Ludicolo", ability: "Dancer", moves: ["celebrate"]},
 		]});
 		battle.setPlayer('p2', {team: [
@@ -210,6 +205,5 @@ describe('Dragon Darts', function () {
 		battle.p2.active[1].faint();
 		battle.makeChoices('move dragondarts 1, move celebrate', 'move celebrate, move celebrate');
 
-		assert(battle.log.includes(`|-fail|p1a: Dragapult`));
 	});
 });

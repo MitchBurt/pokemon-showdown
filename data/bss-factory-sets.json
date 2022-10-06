@@ -165,48 +165,6 @@
       }
     ]
   },
-  "dracovish": {
-    "usage": 8,
-    "sets": [
-      {
-        "species": "Dracovish",
-        "item": ["Choice Band"],
-        "ability": ["Strong Jaw"],
-        "evs": {"atk": 252, "def": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Fishious Rend"], ["Outrage"], ["Sleep Talk"], ["Dive"]]
-      },
-      {
-        "species": "Dracovish",
-        "item": ["Life Orb"],
-        "ability": ["Sand Rush"],
-        "evs": {"atk": 252, "def": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Fishious Rend"], ["Outrage"], ["Rock Blast"], ["Psychic Fangs", "Protect"]]
-      }
-    ]
-  },
-  "dracozolt": {
-    "usage": 5,
-    "sets": [
-      {
-        "species": "Dracozolt",
-        "item": ["Power Herb"],
-        "ability": ["Sand Rush"],
-        "evs": {"atk": 252, "spa": 4, "spe": 252},
-        "nature": "Naive",
-        "moves": [["Bolt Beak"], ["Outrage"], ["Meteor Beam"], ["Fire Blast"]]
-      },
-      {
-        "species": "Dracozolt",
-        "item": ["Life Orb"],
-        "ability": ["Hustle"],
-        "evs": {"atk": 252, "spa": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Bolt Beak"], ["Outrage"], ["Aerial Ace"], ["Fire Fang", "Low Kick"]]
-      }
-    ]
-  },
   "ferrothorn": {
     "usage": 8,
     "sets": [
@@ -275,35 +233,6 @@
         "evs": {"hp": 4, "atk": 252, "spe": 252},
         "nature": "Jolly",
         "moves": [["Wicked Blow"], ["Close Combat"], ["Sucker Punch"], ["Poison Jab", "Thunder Punch", "Aerial Ace"]]
-      }
-    ]
-  },
-  "dragapult": {
-    "usage": 9,
-    "sets": [
-      {
-        "species": "Dragapult",
-        "item": ["Focus Sash"],
-        "ability": ["Infiltrator"],
-        "evs": {"atk": 252, "spa": 4, "spe": 252},
-        "nature": "Naive",
-        "moves": [["Dragon Darts"], ["Phantom Force", "Hex"], ["Dragon Dance"], ["Will-O-Wisp", "Thunder Wave"]]
-      },
-      {
-        "species": "Dragapult",
-        "item": ["Light Clay"],
-        "ability": ["Cursed Body"],
-        "evs": {"hp": 252, "spd": 4, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Reflect"], ["Light Screen"], ["Dragon Darts"], ["Curse"]]
-      },
-      {
-        "species": "Dragapult",
-        "item": ["Choice Specs", "Life Orb"],
-        "ability": ["Clear Body"],
-        "evs": {"spa": 252, "spd": 4, "spe": 252},
-        "nature": "Timid",
-        "moves": [["Draco Meteor"], ["Shadow Ball"], ["Fire Blast", "Thunderbolt"], ["U-turn", "Hydro Pump"]]
       }
     ]
   },

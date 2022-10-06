@@ -197,45 +197,6 @@
       }
     ]
   },
-  "urshifu": {
-    "usage": 8,
-    "sets": [
-      {
-        "species": "Urshifu-Rapid-Strike",
-        "item": ["Focus Sash"],
-        "ability": ["Unseen Fist"],
-        "evs": {"hp": 4, "atk": 252, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Surging Strikes"], ["Close Combat"], ["Counter"], ["Aqua Jet"]]
-      },
-      {
-        "species": "Urshifu-Rapid-Strike",
-        "item": ["Choice Scarf"],
-        "ability": ["Unseen Fist"],
-        "evs": {"hp": 4, "atk": 252, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Surging Strikes"], ["Close Combat"], ["Thunder Punch"], ["U-turn"]]
-      },
-      {
-        "species": "Urshifu",
-        "gigantamax": true,
-        "item": ["Focus Sash"],
-        "ability": ["Unseen Fist"],
-        "evs": {"hp": 4, "atk": 252, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Wicked Blow"], ["Close Combat"], ["Counter"], ["Sucker Punch"]]
-      },
-      {
-        "species": "Urshifu",
-        "gigantamax": true,
-        "item": ["Choice Band"],
-        "ability": ["Unseen Fist"],
-        "evs": {"hp": 4, "atk": 252, "spe": 252},
-        "nature": "Jolly",
-        "moves": [["Wicked Blow"], ["Close Combat"], ["Sucker Punch"], ["Poison Jab", "Thunder Punch", "Aerial Ace"]]
-      }
-    ]
-  },
   "celesteela": {
     "usage": 9,
     "sets": [

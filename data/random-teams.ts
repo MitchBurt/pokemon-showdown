@@ -2229,7 +2229,7 @@ export class RandomTeams {
 			const customScale: {[k: string]: number} = {
 				// These Pokemon are too strong and need a lower level
 				calyrexshadow: 68, xerneas: 70, necrozmaduskmane: 72, kyogre: 73,
-				zekrom: 74, marshadow: 75, glalie: 78, urshifurapidstrike: 79, haxorus: 80, inteleon: 80,
+				zekrom: 74, marshadow: 75, glalie: 78, haxorus: 80, inteleon: 80,
 				cresselia: 83, octillery: 84, jolteon: 84, swoobat: 84, dugtrio: 84, slurpuff: 84, polteageist: 84,
 				wobbuffet: 86, scrafty: 86,
 				// These Pokemon are too weak and need a higher level
@@ -2404,7 +2404,7 @@ export class RandomTeams {
 				break;
 			case 'Magearna': case 'Zarude':
 			case 'Blastoise': case 'Butterfree': case 'Copperajah':
-			case 'Inteleon': case 'Snorlax': case 'Urshifu': case 'Giratina': case 'Genesect':
+			case 'Inteleon': case 'Snorlax': case 'Giratina': case 'Genesect':
 				if (this.gen >= 8 && this.randomChance(1, 2)) continue;
 				break;
 			}

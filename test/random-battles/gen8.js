@@ -185,14 +185,6 @@ describe('[Gen 8] Random Doubles Battle', () => {
 		testSet('darmanitangalar', options, set => assert(set.item.startsWith('Choice ')));
 	});
 
-	it('should always give Urshifu-Rapid-Strike Surging Strikes', () => {
-		testAlwaysHasMove('urshifurapidstrike', options, 'surgingstrikes');
-	});
-
-	it('should always give Urshifu Wicked Blow', () => {
-		testAlwaysHasMove('urshifu', options, 'wickedblow');
-	});
-
 	it('should always give Flapple Ripen', () => {
 		testSet('flapple', options, set => {
 			assert.equal(set.ability, 'Ripen');

@@ -17,12 +17,11 @@ describe('Team Preview', function () {
 			{species: 'Gourgeist-Small', ability: 'pickup', moves: ['sleeptalk']},
 		], [
 			{species: 'Silvally', ability: 'rkssystem', moves: ['sleeptalk']},
-			{species: 'Urshifu-Rapid-Strike', ability: 'unseenfist', moves: ['sleeptalk']},
 		]]);
 		for (const line of battle.log) {
 			if (line.startsWith('|poke|')) {
 				const details = line.split('|')[3];
-				assert(details.match(/(Arceus|Pumpkaboo|Gourgeist|Silvally|Urshifu)-\*/), `Forme was not hidden; preview details: ${details}`);
+				assert(details.match(/(Arceus|Pumpkaboo|Gourgeist|Silvally)-\*/), `Forme was not hidden; preview details: ${details}`);
 			}
 		}
 	});

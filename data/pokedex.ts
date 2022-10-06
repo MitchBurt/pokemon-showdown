@@ -15589,7 +15589,6 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 12,
 		color: "Gray",
 		tags: ["Sub-Legendary"],
-		evos: ["Urshifu", "Urshifu-Rapid-Strike"],
 		eggGroups: ["Undiscovered"],
 	},
 	//scrapchat

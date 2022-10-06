@@ -5926,6 +5926,29 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		randomBattleLevel: 80,
 		tier: "NU",
 	},
+	eternatus: {
+		randomBattleMoves: ["dynamaxcannon", "flamethrower", "recover", "sludgewave", "toxic"],
+		randomBattleLevel: 69,
+		randomDoubleBattleMoves: ["cosmicpower", "dynamaxcannon", "flamethrower", "recover"],
+		randomDoubleBattleLevel: 72,
+		tier: "Uber",
+		doublesTier: "DUber",
+	},
+	eternatuseternamax: {
+		isNonstandard: "Unobtainable",
+		tier: "Illegal",
+	},
+	kubfu: {
+		tier: "NFE",
+	},
+	urshifu: {
+		randomBattleMoves: ["closecombat", "ironhead", "suckerpunch", "uturn", "wickedblow"],
+		randomBattleLevel: 76,
+		randomDoubleBattleMoves: ["closecombat", "ironhead", "protect", "suckerpunch", "wickedblow"],
+		randomDoubleBattleLevel: 76,
+		tier: "Uber",
+		doublesTier: "DUber",
+	},
 	zarudedada: {
 		randomBattleMoves: ["bulkup", "closecombat", "darkestlariat", "junglehealing", "powerwhip", "uturn"],
 		randomBattleLevel: 78,

@@ -5993,6 +5993,18 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	urshifu: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
+	kubfu: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
+	zarude: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	wyrdeer: {
 		isNonstandard: "Future",
 		tier: "Illegal",

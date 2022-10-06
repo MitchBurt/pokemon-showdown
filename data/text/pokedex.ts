@@ -3251,47 +3251,74 @@ export const PokedexText: {[k: string]: PokedexText} = {
 	rickle: {
 		name: "Rickle",
 	},
-	runerigus: {
-		name: "Runerigus",
+	rigamort: {
+		name: "Rigamort",
 	},
-	milcery: {
-		name: "Milcery",
+	rimeslanch: {
+		name: "Rimeslanch",
 	},
-	alcremie: {
-		name: "Alcremie",
+	rock: {
+		name: "Rock",
 	},
-	falinks: {
-		name: "Falinks",
+	sawbaws: {
+		name: "Sawbaws",
 	},
-	pincurchin: {
-		name: "Pincurchin",
+	senketula: {
+		name: "Senketula",
 	},
-	snom: {
-		name: "Snom",
+	shapoopyz: {
+		name: "Shapoopyz",
 	},
-	eternatuseternamax: {
-		name: "Eternatus-Eternamax",
+	shepweird: {
+		name: "Shepeird",
 	},
-	kubfu: {
-		name: "Kubfu",
+	shockitty: {
+		name: "Shockitty",
 	},
-	urshifu: {
-		name: "Urshifu",
+	skorpyros: {
+		name: "Skorpyros",
 	},
-	urshifurapidstrike: {
-		name: "Urshifu-Rapid-Strike",
+	sneddit: {
+		name: "Sneddit",
 	},
-	urshifugmax: {
-		name: "Urshifu-Gmax",
+	speriathan: {
+		name: "Speriathan",
 	},
-	urshifurapidstrikegmax: {
-		name: "Urshifu-Rapid-Strike-Gmax",
+	surbsquatch: {
+		name: "Surbsquatch",
 	},
-	zarude: {
-		name: "Zarude",
+	titenic: {
+		name: "Titenic",
 	},
-	zarudedada: {
-		name: "Zarude-Dada",
+	tom: {
+		name: "Tom",
+	},
+	toncrete: {
+		name: "Toncrete",
+	},
+	trololo: {
+		name: "Trololo",
+	},
+	unjoy: {
+		name: "Unjoy",
+	},
+	vcrbrain: {
+		name: "VCR Brain",
+	},
+	xokkeon: {
+		name: "Xokkeon",
+	},
+	yeesaur: {
+		name: "Yeesaur",
+	},
+	yggdracon: {
+		name: "Yggdracon",
+	},
+	zactory: {
+		name: "Zactory",
+	},
+	zeruel: {
+		name: "Zeruel",
 	},
 	regieleki: {
 		name: "Regieleki",

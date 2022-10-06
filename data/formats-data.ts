@@ -5949,12 +5949,6 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Uber",
 		doublesTier: "DUber",
 	},
-	zarudedada: {
-		randomBattleMoves: ["bulkup", "closecombat", "darkestlariat", "junglehealing", "powerwhip", "uturn"],
-		randomBattleLevel: 78,
-		randomDoubleBattleMoves: ["closecombat", "darkestlariat", "junglehealing", "powerwhip", "protect", "rockslide"],
-		randomDoubleBattleLevel: 80,
-	},
 	regieleki: {
 		randomBattleMoves: ["explosion", "substitute", "thunderbolt", "voltswitch"],
 		randomBattleLevel: 78,

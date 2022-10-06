@@ -2402,7 +2402,7 @@ export class RandomTeams {
 			case 'Necrozma': case 'Calyrex':
 				if (this.randomChance(2, 3)) continue;
 				break;
-			case 'Magearna': case 'Zarude':
+			case 'Magearna':
 			case 'Blastoise': case 'Butterfree': case 'Copperajah':
 			case 'Inteleon': case 'Snorlax': case 'Giratina': case 'Genesect':
 				if (this.gen >= 8 && this.randomChance(1, 2)) continue;

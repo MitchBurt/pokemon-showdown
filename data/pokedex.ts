@@ -15544,6 +15544,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Red",
 		eggGroups: ["Undiscovered"],
 	},
+	//sugrivous
 	eternatus: {
 		num: 890,
 		name: "Eternatus",
@@ -15560,6 +15561,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		formeOrder: ["Eternatus", "Eternatus-Eternamax"],
 		cannotDynamax: true,
 	},
+	//reapcharge
 	eternatuseternamax: {
 		num: 890,
 		name: "Eternatus-Eternamax",
@@ -15575,6 +15577,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Undiscovered"],
 		cannotDynamax: true,
 	},
+	//vivapinat
 	kubfu: {
 		num: 891,
 		name: "Kubfu",
@@ -15589,6 +15592,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evos: ["Urshifu", "Urshifu-Rapid-Strike"],
 		eggGroups: ["Undiscovered"],
 	},
+	//scrapchat
 	urshifu: {
 		num: 892,
 		name: "Urshifu",

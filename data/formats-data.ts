@@ -5989,6 +5989,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Uber",
 		doublesTier: "DUber",
 	},
+	eternatus: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 	wyrdeer: {
 		isNonstandard: "Future",
 		tier: "Illegal",

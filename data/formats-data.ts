@@ -5868,7 +5868,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	surbsquach: {
 		randomBattleMoves: ["closecombat", "earthquake", "icepunch", "stoneedge", "uturn"],
-		tier: "PU",
+		tier: "(PU)",
 		randomBattleLevel: 83,
 	},
 	titenic: {
@@ -5884,7 +5884,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	tonrete: {
 		randomBattleMoves: ["bodypress", "drainpunch", "earthquake", "explosion", "rest", "rockslide", "stoneedge"],
 		randomBattleLevel: 85,
-		tier: "PU",
+		tier: "(PU)",
 	},
 	trololo:{
 		randomBattleMoves: ["meanlook", "toxic", "strengthsap", "suckerpunch", "foulplay"],
